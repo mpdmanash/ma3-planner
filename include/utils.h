@@ -13,10 +13,6 @@
 #include <cmath>
 #include <unordered_map>
 #include <sstream>
-#include <gperftools/profiler.h>
-#include "spdlog/spdlog.h"
-#include "spdlog/sinks/basic_file_sink.h"
-#include "spdlog/sinks/rotating_file_sink.h"
 #include "lib_wastar.h"
 
 using namespace std;
@@ -65,11 +61,11 @@ inline void LogPath(const std::vector<was::ActionState<Action, State> >& path, s
     std::stringstream log_out;
     for(const auto &edge: path) log_out << edge << " | ";
     log_out << "<= Path\n";
-    spdlog::get("lazy-ascp-logger")->info("{} path {}", source, log_out.str());
+    //spdlog::get("lazy-ascp-logger")->info("{} path {}", source, log_out.str());
 }
 
 inline void Log(std::string source, std::string message){
-    spdlog::get("lazy-ascp-logger")->info("{}: {}", source, message);
+    //spdlog::get("lazy-ascp-logger")->info("{}: {}", source, message);
 }
 
 
