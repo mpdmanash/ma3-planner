@@ -1,7 +1,15 @@
 # MA3 Planner
 
+## To Build
 
-UE4 Demo will be released on August 7th 2022.
+- `$ cd ma3-planner`
+- `$ mkdir build`
+- `$ cd build`
+- `$ cmake ..`
+- `$ make`
 
 
-To subscribe for updates, contact mpdmanash @ gmail.com
+
+## To Run
+
+- `$ ./ma3_planner`
